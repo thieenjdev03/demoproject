@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
-      
-      <div style="padding-left:16px">
-        <h2>Top Navigation Example</h2>
-        <p>Some content..</p>
-      </div>
+        <a class="active" href="#home">Trang Chủ</a>
+        <a href="#news">Quẩn Áo</a>
+        <a href="#contact">Giày Dép</a>
+        <a href="#about">Túi Xách</a>
+    </div>
+    <div class="product-list">
+        <div class="card">
+            <img src="https://shopgiaysneaker.vn/wp-content/uploads/giay-mlb-ny-mono-heel-new-york-yankees-black.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Giày Sneaker</h1>
+            <p class="price">2 Triệu</p>
+            <p>CAM KẾT HÀNG CHÍNH HÃNG 100%
+                ĐẦY ĐỦ PHỤ KIỆN : TAG VÀ BOX
+                ĐƯỢC KIỂM TRA HÀNG TRƯỚC KHI THANH TOÁN
+                ĐỔI HÀNG TRONG VÒNG 5 NGÀY</p>
+            <p><button>Thêm Vào Giỏ Hàng</button></p>
+          </div>
+          <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="Denim Jeans" style="width:100%">
+            <h1>Túi MLB</h1>
+            <p class="price">1 Triệu</p>
+            <p>CAM KẾT HÀNG CHÍNH HÃNG 100%
+                ĐẦY ĐỦ PHỤ KIỆN : TAG VÀ BOX
+                ĐƯỢC KIỂM TRA HÀNG TRƯỚC KHI THANH TOÁN
+                ĐỔI HÀNG TRONG VÒNG 5 NGÀY</p>
+            <p><button>Thêm Vào Giỏ Hàng</button></p>
+          </div>
+
+          <div class="card">
+            <img src="https://product.hstatic.net/200000034788/product/z3700074539802_9bfa5d41d4c05dc89c773c08ab119cbd_a43dcee5cb2b44d5b98f66bea4f634d9_master.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Áo Thun MLB</h1>
+            <p class="price">500K</p>
+            <p>CAM KẾT HÀNG CHÍNH HÃNG 100%
+                ĐẦY ĐỦ PHỤ KIỆN : TAG VÀ BOX
+                ĐƯỢC KIỂM TRA HÀNG TRƯỚC KHI THANH TOÁN
+                ĐỔI HÀNG TRONG VÒNG 5 NGÀY</p>
+            <p><button>Thêm Vào Giỏ Hàng</button></p>
+          </div>
+    </div>  
 </body>
 </html>
